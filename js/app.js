@@ -16,3 +16,13 @@ if (underGrad === 'yes' || underGrad === 'y') {
     //console.log('I surely did go to UW for undergrad!');
     //console.log(underGrad);
 }
+
+var chickenName = prompt('Do I have a chiken named Darth Vader?');
+chickenName.toLowerCase();
+if (chickenName === 'yes' || chickenName === 'y'){
+    alert('Of course! As if there is any other name for a hen.');
+    console.log('Of course! As if there is any other name for a hen.');
+} else {
+    alert('Thats just rediculous. I am pretty sure everyone has a hen named Darth Vader.');
+    console.log('Thats a rediculous answer.');
+}
