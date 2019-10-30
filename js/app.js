@@ -26,3 +26,13 @@ if (chickenName === 'yes' || chickenName === 'y'){
     alert('Thats just rediculous. I am pretty sure everyone has a hen named Darth Vader.');
     console.log('Thats a rediculous answer.');
 }
+
+var move = prompt('Am I trying to move to Belltown?');
+move.toLowerCase();
+if (move === 'no' || move ==='n') {
+    alert('Correct! Very little could entice me to Belltown');
+    console.log('Correct.');
+} else {
+    alert('Nope! I want to move to Vashon Island!');
+    console.log('Nope!');
+}
