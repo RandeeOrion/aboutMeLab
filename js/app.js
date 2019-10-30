@@ -21,18 +21,28 @@ var chickenName = prompt('Do I have a chiken named Darth Vader?');
 chickenName.toLowerCase();
 if (chickenName === 'yes' || chickenName === 'y'){
     alert('Of course! As if there is any other name for a hen.');
-    console.log('Of course! As if there is any other name for a hen.');
+    //console.log('Of course! As if there is any other name for a hen.');
 } else {
     alert('Thats just rediculous. I am pretty sure everyone has a hen named Darth Vader.');
-    console.log('Thats a rediculous answer.');
+   // console.log('Thats a rediculous answer.');
 }
 
 var move = prompt('Am I trying to move to Belltown?');
 move.toLowerCase();
 if (move === 'no' || move ==='n') {
     alert('Correct! Very little could entice me to Belltown');
-    console.log('Correct.');
+    //console.log('Correct.');
 } else {
     alert('Nope! I want to move to Vashon Island!');
-    console.log('Nope!');
+    //console.log('Nope!');
+}
+
+var cow = prompt('Will I one day milk my own dairy cow, daily?')
+cow.toLowerCase();
+if (cow === 'yes' || cow==='yes') {
+    alert('Duh.');
+    //console.log('Duh.');
+} else {
+    alert('Incorrect. One day I WILL have a dairy cown and she will need to be milked daily.');
+    //console.log('Incorrect.');
 }
