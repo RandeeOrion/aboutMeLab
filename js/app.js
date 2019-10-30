@@ -39,10 +39,20 @@ if (move === 'no' || move ==='n') {
 
 var cow = prompt('Will I one day milk my own dairy cow, daily?')
 cow.toLowerCase();
-if (cow === 'yes' || cow==='yes') {
+if (cow === 'yes' || cow==='y') {
     alert('Duh.');
     //console.log('Duh.');
 } else {
     alert('Incorrect. One day I WILL have a dairy cown and she will need to be milked daily.');
     //console.log('Incorrect.');
+}
+
+var sheepDogContest = prompt('Will I one day compete in the Sheep Dog Classic?');
+sheepDogContest.toLowerCase();
+if (sheepDogContest === 'yes' || sheepDogContest === 'y') {
+    alert('Obvi. I expect you to be there cheering me on.');
+    //console.log('Correct.');
+} else {
+    alert('Wrong. Wrong. Wrong.');
+    //console.log('Nope.');
 }
