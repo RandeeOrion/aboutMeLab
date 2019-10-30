@@ -56,3 +56,5 @@ if (sheepDogContest === 'yes' || sheepDogContest === 'y') {
     alert('Wrong. Wrong. Wrong.');
     //console.log('Nope.');
 }
+
+alert('Hey, ' + visitorName + ' thanks for playing!');
