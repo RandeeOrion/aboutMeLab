@@ -1,62 +1,80 @@
 "use strict";
 
-// var visitorName = prompt('What is your name?');
-// console.log (visitorName);
+function containq1 () {
+var visitorName = prompt('What is your name?');
+console.log (visitorName);
 
-// alert('Welcome ' + visitorName + '!');
-// // console.log('Welcome ' + visitorName);
+alert('Welcome ' + visitorName + '!');
+// console.log('Welcome ' + visitorName);
 
-// var underGrad = prompt('Did I get my BA from UW?');
-// underGrad = underGrad.toLowerCase();
-// // console.log('underGrad', underGrad);
-// if (underGrad === 'yes' || underGrad === 'y') {
-//     alert('Correct!');
-//     //console.log('Correct!');
-// } else {
-//     alert('I surely did go to UW for undergrad!');
-//     //console.log('I surely did go to UW for undergrad!');
-//     //console.log(underGrad);
-// }
+var underGrad = prompt('Did I get my BA from UW?');
+underGrad = underGrad.toLowerCase();
+// console.log('underGrad', underGrad);
+if (underGrad === 'yes' || underGrad === 'y') {
+    alert('Correct!');
+    //console.log('Correct!');
+} else {
+    alert('I surely did go to UW for undergrad!');
+    //console.log('I surely did go to UW for undergrad!');
+    //console.log(underGrad);
+}
+}
+containq1();
 
-// var chickenName = prompt('Do I have a chicken named Darth Vader?');
-// chickenName = chickenName.toLowerCase();
-// if (chickenName === 'yes' || chickenName === 'y') {
-//     alert('Of course! As if there is any other name for a hen.');
-//     //console.log('Of course! As if there is any other name for a hen.');
-// } else {
-//     alert('Thats just ridiculous. I am pretty sure everyone has a hen named Darth Vader.');
-//    // console.log('Thats a rediculous answer.');
-// }
 
-// var move = prompt('Am I trying to move to Belltown?');
-// move = move.toLowerCase();
-// if (move === 'no' || move ==='n') {
-//     alert('Correct! Very little could entice me to Belltown');
-//     //console.log('Correct.');
-// } else {
-//     alert('Nope! I want to move to Vashon Island!');
-//     //console.log('Nope!');
-// }
+function containq2 () {
+var chickenName = prompt('Do I have a chicken named Darth Vader?');
+chickenName = chickenName.toLowerCase();
+if (chickenName === 'yes' || chickenName === 'y') {
+    alert('Of course! As if there is any other name for a hen.');
+    //console.log('Of course! As if there is any other name for a hen.');
+} else {
+    alert('Thats just ridiculous. I am pretty sure everyone has a hen named Darth Vader.');
+   // console.log('Thats a rediculous answer.');
+}
+}
+containq2();
 
-// var cow = prompt('Will I one day milk my own dairy cow, daily?')
-// cow = cow.toLowerCase();
-// if (cow === 'yes' || cow==='y') {
-//     alert('Duh.');
-//     //console.log('Duh.');
-// } else {
-//     alert('Incorrect. One day I WILL have a dairy cow and she will need to be milked daily.');
-//     //console.log('Incorrect.');
-// }
 
-// var sheepDogContest = prompt('Will I one day compete in the Sheep Dog Classic?');
-// sheepDogContest = sheepDogContest.toLowerCase();
-// if (sheepDogContest === 'yes' || sheepDogContest === 'y') {
-//     alert('Obvi. I expect you to be there cheering me on.');
-//     //console.log('Correct.');
-// } else {
-//     alert('Wrong. Wrong. Wrong.');
-//     //console.log('Nope.');
-// }
+function containq3() {
+var move = prompt('Am I trying to move to Belltown?');
+move = move.toLowerCase();
+if (move === 'no' || move ==='n') {
+    alert('Correct! Very little could entice me to Belltown');
+    //console.log('Correct.');
+} else {
+    alert('Nope! I want to move to Vashon Island!');
+    //console.log('Nope!');
+}
+}
+containq3
+
+
+function containq4 (){
+var cow = prompt('Will I one day milk my own dairy cow, daily?')
+cow = cow.toLowerCase();
+if (cow === 'yes' || cow==='y') {
+    alert('Duh.');
+    //console.log('Duh.');
+} else {
+    alert('Incorrect. One day I WILL have a dairy cow and she will need to be milked daily.');
+    //console.log('Incorrect.');
+}
+}
+containq4 ();
+
+function containq5 (){
+var sheepDogContest = prompt('Will I one day compete in the Sheep Dog Classic?');
+sheepDogContest = sheepDogContest.toLowerCase();
+if (sheepDogContest === 'yes' || sheepDogContest === 'y') {
+    alert('Obvi. I expect you to be there cheering me on.');
+    //console.log('Correct.');
+} else {
+    alert('Wrong. Wrong. Wrong.');
+    //console.log('Nope.');
+}
+}
+containq5();
 
 //first loop. too high or too low, four chances
 
@@ -79,24 +97,24 @@
 
 // second loop with an array
 
-var realChickenName = ['Darth Vader', 'Rosabelle', 'Commander Leia', 'Rey', 'Chewbacca', 'BB8']
-console.log(realChickenName);
-console.log (realChickenName.length);
+// var realChickenName = ['Darth Vader', 'Rosabelle', 'Commander Leia', 'Rey', 'Chewbacca', 'BB8']
+// console.log(realChickenName);
+// console.log (realChickenName.length);
 
-// var i = 0
-var guessChickenName = prompt('Can you guess the name of one of my chickens? Hint: my then four year old daughter was mildly obsessed with Star Wars when she named our day old hatchlings.');
-console.log(guessChickenName); 
+// // var i = 0
+// var guessChickenName = prompt('Can you guess the name of one of my chickens? Hint: my then four year old daughter was mildly obsessed with Star Wars when she named our day old hatchlings.');
+// console.log(guessChickenName); 
 
-for ( var i = 0; i < realChickenName.length; i++) {
-    console.log('[i]',realChickenName[i]);
-    if (realChickenName[i] === guessChickenName) {
-        alert ('Well done you.');
-        i = 6;
-    } else {
-        prompt ('try again'); 
-        i++;
-    }
-}
+// for ( var i = 0; i < realChickenName.length; i++) {
+//     console.log('[i]',realChickenName[i]);
+//     if (realChickenName[i] === guessChickenName) {
+//         alert ('Well done you.');
+//         i = 6;
+//     } else {
+//         prompt ('try again'); 
+//         i++;
+//     }
+// }
 
 
 
