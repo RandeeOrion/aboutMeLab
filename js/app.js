@@ -64,10 +64,10 @@ var answer = 5
 for ( var i = 0; i < 4; i++){
 var howManyChickens = parseInt( prompt('How many chickens do I have?'));
 console.log(typeof howManyChickens);
-if (howManyChickens < answer) {
-    howManyChickens = parseInt( prompt('Too Low! Seriously, everyone needs more chickens than that. Try Again!'));
-} else if (howManyChickens === answer) {
+if (howManyChickens === answer) {
     alert('Correct! I have five chickens!');
+} else if (howManyChickens < answer) {
+    howManyChickens = parseInt( prompt('Too Low! Seriously, everyone needs more chickens than that. Try Again!'));
 } else {
     howManyChickens = parseInt( prompt('Too high! Try Again!'));
 }
@@ -82,11 +82,12 @@ console.log(realChickenName);
 
 var i = 0
 
-while ( (i < 6) && (guessChickenName !== realChickenName)){
+while (i < 6){
     var guessChickenName = prompt('Can you guess the name of one of my chickens? Hint: my then four year old daughter was mildly obsessed with Star Wars when she named our day old hatchlings.');
     
     console.log(guessChickenName);
     i++;
+    //need an if/ else and a break 
 }
 
 alert('Welp, missed them all, but here are the chicken names ' + realChickenName);

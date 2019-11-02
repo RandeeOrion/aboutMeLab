@@ -1,0 +1,19 @@
+body {
+    background-color: azure;
+}
+
+h1 {
+    color: midnightblue;
+    font-size: 40px;
+    width: 80%;
+    margin: 20px 10px 20px 10px;
+}
+
+p {
+    color: midnightblue;
+    width: 80%;
+    margin: 20px 10px 20px 10px;
+}
+ul {
+    margin: 20px auto;
+}
