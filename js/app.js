@@ -77,13 +77,25 @@ alert('I have five chickens.')
 //second loop with an array
 
 var realChickenName = ['Darth Vader', 'Rosabelle', 'Commander Leia', 'Rey', 'Chewbacca', 'BB8']
-chickenName = chickenName.toLowerCase();
+console.log(realChickenName);
 
-for ( var i = o; i < 6; i++) {
-var nameGuess = toLowerCase( prompt('Can you guess the name of one of my chickens? Hint, my then four year old was mildly obsessed with Star Wars when she named them.'));
-if (nameGuess === realChickenName) {
+
+var i = 0
+
+while ( (i < 6) && (guessChickenName !== realChickenName)){
+    var guessChickenName = prompt('Can you guess the name of one of my chickens? Hint: my then four year old daughter was mildly obsessed with Star Wars when she named our day old hatchlings.');
+    
+    console.log(guessChickenName);
+    i++;
+}
+
+alert('Welp, missed them all, but here are the chicken names ' + realChickenName);
+
+//for ( var i = o; i < 6; i++) {
+//var nameGuess = toLowerCase( prompt('Can you guess the name of one of my chickens? Hint, my then four year old was mildly obsessed with Star Wars when she named them.'));
+//if (nameGuess === realChickenName) {
     //look back at line 68 and this will only have one else statement. 
-}
-}
+//}
+//}
 
 alert('Hey ' + visitorName + ', thanks for playing!');
