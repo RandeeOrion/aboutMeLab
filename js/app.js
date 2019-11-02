@@ -1,6 +1,6 @@
 "use strict";
 
-var visitorName = prompt('What is your name?');
+// var visitorName = prompt('What is your name?');
 // console.log (visitorName);
 
 // alert('Welcome ' + visitorName + '!');
@@ -62,6 +62,7 @@ var visitorName = prompt('What is your name?');
 
 // var answer = 5
 // var howManyChickensPrompt = parseInt( prompt('How many chickens do I have?'));
+
 // var howManyChickens = howManyChickensPrompt;
 // for ( var i = 0; i < 3; i++){
 //     console.log(typeof howManyChickens);
@@ -76,23 +77,41 @@ var visitorName = prompt('What is your name?');
 
 // }
 
-second loop with an array
+// second loop with an array
 
 var realChickenName = ['Darth Vader', 'Rosabelle', 'Commander Leia', 'Rey', 'Chewbacca', 'BB8']
 console.log(realChickenName);
+console.log (realChickenName.length);
 
+// var i = 0
+var guessChickenName = prompt('Can you guess the name of one of my chickens? Hint: my then four year old daughter was mildly obsessed with Star Wars when she named our day old hatchlings.');
+console.log(guessChickenName); 
 
-var i = 0
-
-while (i < 6){
-    var guessChickenName = prompt('Can you guess the name of one of my chickens? Hint: my then four year old daughter was mildly obsessed with Star Wars when she named our day old hatchlings.');
-    
-    console.log(guessChickenName);
-    i++;
-    need an if/ else and a break 
+for ( var i = 0; i < realChickenName.length; i++) {
+    console.log('[i]',realChickenName[i]);
+    if (realChickenName[i] === guessChickenName) {
+        alert ('Well done you.');
+        i = 6;
+    } else {
+        prompt ('try again'); 
+        i++;
+    }
 }
 
-alert('Welp, missed them all, but here are the chicken names ' + realChickenName);
+
+
+// while (i < 6){  
+//     if (guessChickenName !== realChickenName) {
+//     prompt('Think harder and try again!');
+//     i++;
+// } else { 
+//     prompt ('Well done you.');
+//     break;
+// }
+// }
+
+
+// alert('Welp, missed them all, but here are the chicken names ' + realChickenName);
 
 // for ( var i = o; i < 6; i++) {
 // var nameGuess = toLowerCase( prompt('Can you guess the name of one of my chickens? Hint, my then four year old was mildly obsessed with Star Wars when she named them.'));
@@ -101,4 +120,4 @@ alert('Welp, missed them all, but here are the chicken names ' + realChickenName
 // }
 // }
 
-alert('Hey ' + visitorName + ', thanks for playing!');
+// alert('Hey ' + visitorName + ', thanks for playing!');
