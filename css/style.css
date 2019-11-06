@@ -1,19 +1,100 @@
 body {
-    background-color: azure;
+    background-color:#ebfad1;
+    color: darkslategrey
+
 }
 
-h1 {
-    color: midnightblue;
+h1 { 
     font-size: 40px;
     width: 80%;
     margin: 20px 10px 20px 10px;
+    color: #d277a5;
+    margin: auto;
+    padding: 15px 40px 5px 40px;
+
+}
+
+h3{
+    font-size: 30px;
+    color: #d277a6;
+
 }
 
 p {
-    color: midnightblue;
-    width: 80%;
+    width: 85%;
     margin: 20px 10px 20px 10px;
+    text-align: justify;
 }
 ul {
     margin: 20px auto;
+    list-style: inherit;
+    list-style: inside circle;
+}
+
+ol {
+    display: inline-block;
+    padding: 10px;
+    margin: 15px;
+    list-style: decimal;
+}
+
+
+#college {
+    display: inline-block;
+    float: auto;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 350px;
+    overflow: scroll;
+    border-color: #d277a5;
+    padding: 10px;
+    margin: 15px;
+    border-width: 3px;
+    border-style: double;
+}
+#major {
+    text-indent: 2em;
+}
+
+#work {
+    display: inline-block;
+    float: auto;
+    margin: auto;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 350px;
+    overflow: scroll;
+    padding: 10px;
+    margin: 15px;
+    border-width: 3px;
+    border-style: double;
+    border-color: #d277a5;]
+}
+
+#goals {
+    margin: 30px 15px;
+    padding: 10px;
+    text-align: center;
+
+}
+#sleepList {
+    display: inline-block;
+    float: auto;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 350px;
+    overflow: scroll;
+    border-color: #d277a5;
+    padding: 10px;
+    margin: 15px;
+    border-width: 3px;
+    border-style: double;
+}
+
+
+img{
+    margin: 15px auto 15px auto;
 }
