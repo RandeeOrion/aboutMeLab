@@ -1,8 +1,12 @@
 "use strict";
 
-function containq1 () {
 var visitorName = prompt('What is your name?');
 console.log (visitorName);
+
+var correctAnswers = 0
+
+
+function containq1 () {
 
 alert('Welcome ' + visitorName + '!');
 // console.log('Welcome ' + visitorName);
@@ -12,6 +16,7 @@ underGrad = underGrad.toLowerCase();
 // console.log('underGrad', underGrad);
 if (underGrad === 'yes' || underGrad === 'y') {
     alert('Correct!');
+    correctAnswers++;
     //console.log('Correct!');
 } else {
     alert('I surely did go to UW for undergrad!');
@@ -27,6 +32,7 @@ var chickenName = prompt('Do I have a chicken named Darth Vader?');
 chickenName = chickenName.toLowerCase();
 if (chickenName === 'yes' || chickenName === 'y') {
     alert('Of course! As if there is any other name for a hen.');
+    correctAnswers++;
     //console.log('Of course! As if there is any other name for a hen.');
 } else {
     alert('Thats just ridiculous. I am pretty sure everyone has a hen named Darth Vader.');
@@ -41,6 +47,7 @@ var move = prompt('Am I trying to move to Belltown?');
 move = move.toLowerCase();
 if (move === 'no' || move ==='n') {
     alert('Correct! Very little could entice me to Belltown');
+    correctAnswers++;
     //console.log('Correct.');
 } else {
     alert('Nope! I want to move to Vashon Island!');
@@ -55,6 +62,7 @@ var cow = prompt('Will I one day milk my own dairy cow, daily?')
 cow = cow.toLowerCase();
 if (cow === 'yes' || cow==='y') {
     alert('Duh.');
+    correctAnswers++;
     //console.log('Duh.');
 } else {
     alert('Incorrect. One day I WILL have a dairy cow and she will need to be milked daily.');
@@ -68,6 +76,7 @@ var sheepDogContest = prompt('Will I one day compete in the Sheep Dog Classic?')
 sheepDogContest = sheepDogContest.toLowerCase();
 if (sheepDogContest === 'yes' || sheepDogContest === 'y') {
     alert('Obvi. I expect you to be there cheering me on.');
+    correctAnswers++;
     //console.log('Correct answer.');
 } else {
     alert('Wrong. Wrong. Wrong.');
@@ -86,6 +95,7 @@ for ( var i = 0; i < 3; i++){
     //console.log('Type of answer: ' typeof howManyChickens);
     if (howManyChickens === answer) {
         alert('Correct! I have five chickens!');
+        correctAnswers++;
     break;
 } else if (howManyChickens < answer) {
     howManyChickens = parseInt( prompt('Too Low! Seriously, everyone needs more chickens than that. Try Again!'));
@@ -108,6 +118,7 @@ for ( var i = 0; i < realChickenName.length - 1; i++) {
     console.log('[i]',realChickenName[i]);
     if (realChickenName[i] === guessChickenName) {
         alert ('Well done you.');
+        correctAnswers++;
         i = 6;
     } else {
         prompt ('try again'); 
@@ -116,4 +127,5 @@ for ( var i = 0; i < realChickenName.length - 1; i++) {
 
 
 
-alert('Hey ' + visitorName + ', thanks for playing!');
+//alert('Hey ' + visitorName + ', thanks for playing!');
+alert(`Hey ${visitorName}, you got ${correctAnswers} correct. Well done!`);
