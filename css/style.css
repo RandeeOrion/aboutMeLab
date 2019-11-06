@@ -44,7 +44,7 @@ ol {
     display: inline-block;
     padding: 10px;
     margin: 15px;
-    list-style-image: url('img/Walter.png');
+    list-style: decimal;
 }
 
 
